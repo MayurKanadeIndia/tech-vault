@@ -27,11 +27,11 @@ When you type `ls`, here's what happens:
 3. The kernel uses **device drivers** to talk to the disk (hardware)
 4. Data flows back: kernel → shell → screen
 
-![alt text](images/command_execution_flow_in_linux.png)
+![alt text](images/command_execution.png)
 
 ## Example: The journey of `ls` execution in detail
 
-![alt text](images/example_ls_journey.png)
+![alt text](images/ls_journey.png)
 
 **Key correction:** System calls flow from userspace → kernel. The kernel does NOT use system calls to talk to hardware — it uses device drivers and interrupts. System calls are the API that userspace uses to request things from the kernel.
 
